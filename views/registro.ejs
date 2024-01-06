@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/app.css">
+    <title>Registro</title>
+</head>
+<body>
+    <div class="contenedor registro-contenido">
+        <h1>Registro de usuarios</h1>
+
+        <form action="/validar" method="post" class="formulario-registro">
+            <div class="campo">
+                <label for="nombre">Nombre Usuario</label>
+                <input type="text" name="username" id="username" placeholder="Nombre" required>
+            </div> <!-- .campo -->
+
+            <div class="campo">
+                <select name="rol" id="rol">
+                    <option value="" selected disabled>Seleccione un rol</option>
+                    <option value="1">Administrador</option>
+                    <option value="2">Usuario</option>
+                    <option value="2">Invitado</option>
+                </select>
+            </div><!-- .campo -->
+
+            <div class="campo">
+                <label for="password">Contraseña</label>
+                <input type="password" name="password" id="password" placeholder="Contraseña" required>
+            </div><!-- .campo -->
+
+            <div class="campo">
+                <label for="password2">Repetir contraseña</label>
+                <input type="password" name="password2" id="password2" placeholder="Repetir contraseña" required>
+            </div><!-- .campo -->
+
+            <input type="submit" value="Registrarse">
+        </form>
+        
+        <a href="/login">Iniciar sesión</a>
+    </div>
+    
+    <script src="/js/registro.js"></script>
+</body>
+</html>

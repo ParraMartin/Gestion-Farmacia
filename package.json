@@ -1,0 +1,39 @@
+{
+  "name": "gestion-farmacia",
+  "version": "1.0.0",
+  "description": "Sistema Web para la gestion de entrega de medicamentos mediante receta",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "start" : "node --watch index.js",
+    "dev" : "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lucke514/Gestion-Farmacia.git"
+  },
+  "keywords": [
+    "node.js",
+    "WebSocket",
+    "mysql",
+    "gulp",
+    "sass",
+    "express",
+    "http"
+  ],
+  "author": "Lucas Gonzalez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lucke514/Gestion-Farmacia/issues"
+  },
+  "homepage": "https://github.com/Lucke514/Gestion-Farmacia#readme",
+  "devDependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "gulp": "^4.0.2",
+    "gulp-plumber": "^1.2.1",
+    "gulp-sass": "^5.1.0",
+    "mysql": "^2.18.1",
+    "sass": "^1.69.7"
+  }
+}

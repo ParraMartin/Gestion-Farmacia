@@ -1,0 +1,49 @@
+@use '../base/variables' as v;
+
+.usuarios-contenido {
+    h1 {
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .tablaUsuarios {
+        width: 100%;
+        border-collapse: collapse;
+        border-spacing: 0;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border: 1px solid v.$white-200;
+        th,
+        td {
+            text-align: left;
+            padding: 16px;
+        }
+        tr:nth-child(even) {
+            background-color: v.$white-50;
+        }
+        th {
+            background-color: v.$green-700;
+            color: white;
+        }
+
+        button {
+            background-color: v.$blue-800;
+            border: 1px solid v.$blue-400;
+            color: white;
+            padding: 5px 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 12px;
+            margin: 0px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+
+            &:hover {
+                background-color: v.$blue-700;
+            }
+        }
+    }
+}
