@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+</head>
+<body>
+    <div class="header">
+        <header class="header-contenido">
+            <h1>Farmacia</h1>
+
+            <nav class="nav-header">
+                <% if (usuario && usuario.tipo_rol === 'administrador') { %>
+                    <a href="/usuarios">Usuarios</a>
+                <% } %>
+            </nav>
+        </header>
+    </div>
+
+    <div class="contenido">
+        <div class="contenido-contenido">
+            <h2>Inicio</h2>
+            <p>Esta es la página de inicio</p>
+        </div>
+
+        <!-- Insertar los datos del usuario -->
+        <div>
+            <h3>Usuario</h3>
+            <p>ID: <%= usuario.id_usuario %></p>
+            <p>Nombre de usuario: <%= usuario.username %></p>
+            <p>ID del rol: <%= usuario.id_rol %></p>
+            <p>Tipo de rol: <%= usuario.tipo_rol %></p>
+        </div>
+
+    </div>
+    
+</body>
+</html>

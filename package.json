@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "test",
-    "start" : "node --watch index.js",
-    "dev" : "gulp"
+    "start": "node --watch index.js",
+    "dev": "gulp"
   },
   "repository": {
     "type": "git",
@@ -28,8 +28,10 @@
   },
   "homepage": "https://github.com/Lucke514/Gestion-Farmacia#readme",
   "devDependencies": {
+    "bcrypt": "^5.1.1",
     "ejs": "^3.1.9",
     "express": "^4.18.2",
+    "express-session": "^1.17.3",
     "gulp": "^4.0.2",
     "gulp-plumber": "^1.2.1",
     "gulp-sass": "^5.1.0",

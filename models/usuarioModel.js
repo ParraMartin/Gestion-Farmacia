@@ -21,4 +21,10 @@ Usuario.getUsuarios = (callback) => {
     conexion.query(usuarios, callback);
 };
 
+// Obtener los datos de un usuario en especifico y el rol
+Usuario.getUsuario = (id, callback) => {
+    const usuario = 'SELECT * FROM usuario INNER JOIN rol ON usuario.id_rol = rol.id_rol WHERE id_usuario = ?';
+    conexion.query(usuario, [id], callback);
+};
+
 module.exports = Usuario;
